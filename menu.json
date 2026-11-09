@@ -1,0 +1,333 @@
+{
+  "shop_name": "Hallelujah Coffee",
+  "currency": "VND",
+  "sizes": {
+    "M": 0,
+    "L": 10000
+  },
+  "categories": {
+    "ca_phe": "Cà phê",
+    "tra": "Trà trái cây",
+    "nuoc_ep": "Nước ép",
+    "sinh_to": "Sinh tố",
+    "banh": "Bánh"
+  },
+  "bestsellers_seed": [
+    "ca_phe_muoi",
+    "tra_dao_cam_sa",
+    "sinh_to_bo"
+  ],
+  "toppings": [
+    {
+      "id": "tran_chau",
+      "name": "Trân châu đen",
+      "price": 7000,
+      "categories": [
+        "ca_phe",
+        "tra"
+      ],
+      "allergens": []
+    },
+    {
+      "id": "thach_dao",
+      "name": "Thạch đào",
+      "price": 7000,
+      "categories": [
+        "tra"
+      ],
+      "allergens": []
+    },
+    {
+      "id": "thach_vai",
+      "name": "Thạch vải",
+      "price": 7000,
+      "categories": [
+        "tra"
+      ],
+      "allergens": []
+    },
+    {
+      "id": "kem_cheese",
+      "name": "Kem cheese",
+      "price": 12000,
+      "categories": [
+        "ca_phe",
+        "tra"
+      ],
+      "allergens": [
+        "sữa"
+      ]
+    },
+    {
+      "id": "sua_chua",
+      "name": "Sữa chua",
+      "price": 8000,
+      "categories": [
+        "sinh_to"
+      ],
+      "allergens": [
+        "sữa"
+      ]
+    },
+    {
+      "id": "hat_chia",
+      "name": "Hạt chia",
+      "price": 5000,
+      "categories": [
+        "nuoc_ep",
+        "sinh_to"
+      ],
+      "allergens": []
+    },
+    {
+      "id": "kem_tuoi",
+      "name": "Kem tươi",
+      "price": 8000,
+      "categories": [
+        "sinh_to",
+        "banh"
+      ],
+      "allergens": [
+        "sữa"
+      ]
+    },
+    {
+      "id": "shot_espresso",
+      "name": "Thêm 1 shot espresso",
+      "price": 10000,
+      "categories": [
+        "ca_phe"
+      ],
+      "allergens": []
+    }
+  ],
+  "items": [
+    {
+      "id": "ca_phe_muoi",
+      "name": "Cà phê muối",
+      "category": "ca_phe",
+      "price": 35000,
+      "sized": true,
+      "description": "Cà phê sữa phủ lớp kem muối béo mặn nhẹ.",
+      "allergens": [
+        "sữa"
+      ],
+      "caffeine": true
+    },
+    {
+      "id": "ca_phe_den",
+      "name": "Cà phê đen",
+      "category": "ca_phe",
+      "price": 25000,
+      "sized": true,
+      "description": "Cà phê phin đậm, không đường sữa.",
+      "allergens": [],
+      "caffeine": true
+    },
+    {
+      "id": "nau_da",
+      "name": "Nâu đá",
+      "category": "ca_phe",
+      "price": 29000,
+      "sized": true,
+      "description": "Cà phê sữa đá truyền thống.",
+      "allergens": [
+        "sữa"
+      ],
+      "caffeine": true
+    },
+    {
+      "id": "ca_phe_cot_dua",
+      "name": "Cà phê cốt dừa",
+      "category": "ca_phe",
+      "price": 39000,
+      "sized": true,
+      "description": "Cà phê xay cùng cốt dừa béo mịn.",
+      "allergens": [
+        "dừa"
+      ],
+      "caffeine": true
+    },
+    {
+      "id": "tra_dao_cam_sa",
+      "name": "Trà đào cam sả",
+      "category": "tra",
+      "price": 45000,
+      "sized": true,
+      "description": "Trà đen, đào miếng, cam tươi, thơm sả.",
+      "allergens": [],
+      "caffeine": true
+    },
+    {
+      "id": "tra_mang_cau",
+      "name": "Trà mãng cầu",
+      "category": "tra",
+      "price": 45000,
+      "sized": true,
+      "description": "Trà xanh mãng cầu xiêm chua ngọt nhẹ.",
+      "allergens": [],
+      "caffeine": true
+    },
+    {
+      "id": "tra_nho",
+      "name": "Trà nho",
+      "category": "tra",
+      "price": 45000,
+      "sized": true,
+      "description": "Trà nho thanh mát, vị chua dịu.",
+      "allergens": [],
+      "caffeine": true
+    },
+    {
+      "id": "tra_xoai_chanh_day",
+      "name": "Trà xoài chanh leo",
+      "category": "tra",
+      "price": 49000,
+      "sized": true,
+      "description": "Xoài chín và chanh leo, chua ngọt đậm vị.",
+      "allergens": [],
+      "caffeine": true
+    },
+    {
+      "id": "ep_dua_hau",
+      "name": "Nước ép dưa hấu",
+      "category": "nuoc_ep",
+      "price": 39000,
+      "sized": true,
+      "description": "Dưa hấu ép nguyên chất, ít đường.",
+      "allergens": [],
+      "caffeine": false
+    },
+    {
+      "id": "ep_cam",
+      "name": "Nước ép cam",
+      "category": "nuoc_ep",
+      "price": 42000,
+      "sized": true,
+      "description": "Cam vắt tươi, không cần thêm đường.",
+      "allergens": [],
+      "caffeine": false
+    },
+    {
+      "id": "ep_dua",
+      "name": "Nước ép dứa",
+      "category": "nuoc_ep",
+      "price": 39000,
+      "sized": true,
+      "description": "Dứa ép chua ngọt, giải khát.",
+      "allergens": [],
+      "caffeine": false
+    },
+    {
+      "id": "ep_luu",
+      "name": "Nước ép lựu",
+      "category": "nuoc_ep",
+      "price": 55000,
+      "sized": true,
+      "description": "Lựu đỏ ép tươi, vị ngọt thanh.",
+      "allergens": [],
+      "caffeine": false
+    },
+    {
+      "id": "sinh_to_bo",
+      "name": "Sinh tố bơ",
+      "category": "sinh_to",
+      "price": 49000,
+      "sized": true,
+      "description": "Bơ sáp xay cùng sữa đặc, béo mịn.",
+      "allergens": [
+        "sữa"
+      ],
+      "caffeine": false
+    },
+    {
+      "id": "sinh_to_dau",
+      "name": "Sinh tố dâu",
+      "category": "sinh_to",
+      "price": 49000,
+      "sized": true,
+      "description": "Dâu tươi xay với sữa chua.",
+      "allergens": [
+        "sữa"
+      ],
+      "caffeine": false
+    },
+    {
+      "id": "sinh_to_xoai",
+      "name": "Sinh tố xoài",
+      "category": "sinh_to",
+      "price": 45000,
+      "sized": true,
+      "description": "Xoài cát chín xay mịn.",
+      "allergens": [],
+      "caffeine": false
+    },
+    {
+      "id": "sinh_to_viet_quat",
+      "name": "Sinh tố việt quất",
+      "category": "sinh_to",
+      "price": 55000,
+      "sized": true,
+      "description": "Việt quất xay sữa chua, màu tím đẹp.",
+      "allergens": [
+        "sữa"
+      ],
+      "caffeine": false
+    },
+    {
+      "id": "tiramisu",
+      "name": "Tiramisu",
+      "category": "banh",
+      "price": 49000,
+      "sized": false,
+      "description": "Bánh tiramisu vị cà phê và cacao.",
+      "allergens": [
+        "sữa",
+        "trứng",
+        "gluten"
+      ],
+      "caffeine": true
+    },
+    {
+      "id": "tart_trung",
+      "name": "Tart trứng",
+      "category": "banh",
+      "price": 25000,
+      "sized": false,
+      "description": "Vỏ bánh giòn, nhân trứng sữa mềm.",
+      "allergens": [
+        "sữa",
+        "trứng",
+        "gluten"
+      ],
+      "caffeine": false
+    },
+    {
+      "id": "su_kem",
+      "name": "Su kem",
+      "category": "banh",
+      "price": 20000,
+      "sized": false,
+      "description": "Vỏ su mềm, nhân kem vani.",
+      "allergens": [
+        "sữa",
+        "trứng",
+        "gluten"
+      ],
+      "caffeine": false
+    },
+    {
+      "id": "macaron",
+      "name": "Macaron",
+      "category": "banh",
+      "price": 30000,
+      "sized": false,
+      "description": "Bánh macaron nhiều vị, giá cho 1 cái.",
+      "allergens": [
+        "trứng",
+        "hạt"
+      ],
+      "caffeine": false
+    }
+  ]
+}

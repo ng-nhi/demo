@@ -1,0 +1,24 @@
+# AI Models and Binaries
+models/*.gguf
+models/.cache/
+llama-server*
+*.exe
+*.dll
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# Runtime data & logs
+data/orders.jsonl
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

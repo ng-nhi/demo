@@ -1,0 +1,7 @@
+users,loai,so_request,ttft_p50_ms,ttft_p95_ms
+10,cache hit,730,2.0,5.0
+10,cache miss (chạy LLM thật),56,585.0,2481.0
+20,cache hit,1486,2.0,4.0
+20,cache miss (chạy LLM thật),70,2478.0,4387.0
+30,cache hit,1960,2.0,6.0
+30,cache miss (chạy LLM thật),97,6663.0,8083.0

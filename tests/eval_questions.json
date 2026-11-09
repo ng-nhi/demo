@@ -1,0 +1,476 @@
+[
+ {
+  "q": "nâu đá giá bao nhiêu",
+  "source": "faq",
+  "must": [
+   "29.000đ"
+  ]
+ },
+ {
+  "q": "Cà phê muối giá bao nhiêu?",
+  "source": "faq",
+  "must": [
+   "35.000đ"
+  ]
+ },
+ {
+  "q": "Kem cheese giá bao nhiêu?",
+  "source": "faq",
+  "must": [
+   "12.000đ"
+  ]
+ },
+ {
+  "q": "Size L phụ thu bao nhiêu?",
+  "source": "faq",
+  "must": [
+   "10.000đ"
+  ]
+ },
+ {
+  "q": "Cho mình 2 trà đào cam sả size L, tổng bao nhiêu?",
+  "source": "faq",
+  "must": [
+   "110.000đ"
+  ]
+ },
+ {
+  "q": "Cho mình 1 sinh tố bơ size L thêm hạt chia, tổng bao nhiêu?",
+  "source": "faq",
+  "must": [
+   "64.000đ"
+  ]
+ },
+ {
+  "q": "nâu đá thêm thạch đào giá bao nhiêu",
+  "source": "faq",
+  "must": [
+   "không dùng được"
+  ]
+ },
+ {
+  "q": "món nào không caffeine?",
+  "source": "faq",
+  "must": [
+   "Nước ép dưa hấu"
+  ],
+  "must_not": [
+   "Cà phê muối",
+   "Tiramisu"
+  ]
+ },
+ {
+  "q": "mình dị ứng sữa thì uống gì?",
+  "source": "faq",
+  "must": [
+   "Cà phê đen"
+  ],
+  "must_not": [
+   "Cà phê muối",
+   "Sinh tố bơ"
+  ]
+ },
+ {
+  "q": "có món nào dưới 40k?",
+  "source": "faq",
+  "must": [
+   "Nâu đá"
+  ],
+  "must_not": [
+   "Trà đào cam sả"
+  ]
+ },
+ {
+  "q": "Bánh nào có chứa gluten?",
+  "source": "faq",
+  "must": [
+   "Tiramisu"
+  ],
+  "must_not": [
+   "Macaron"
+  ]
+ },
+ {
+  "q": "Món nào bán chạy nhất?",
+  "source": "faq",
+  "must": [
+   "Cà phê muối",
+   "Trà đào cam sả",
+   "Sinh tố bơ"
+  ]
+ },
+ {
+  "q": "Topping nào dùng được cho sinh tố?",
+  "source": "faq",
+  "must": [
+   "Hạt chia"
+  ],
+  "must_not": [
+   "Trân châu đen"
+  ]
+ },
+ {
+  "q": "cà phê muối có sữa không?",
+  "source": "faq",
+  "must": [
+   "có chứa sữa"
+  ]
+ },
+ {
+  "q": "Hôm nay giá vàng bao nhiêu?",
+  "source": "llm",
+  "must_not": [
+   "chỉ hỗ trợ về menu",
+   "chưa trả lời được câu này"
+  ]
+ },
+ {
+  "q": "thời tiết hôm nay thế nào",
+  "source": "llm",
+  "must_not": [
+   "chỉ hỗ trợ về menu",
+   "chưa trả lời được câu này"
+  ]
+ },
+ {
+  "q": "viết giúp mình đoạn code python",
+  "source": "llm",
+  "must_not": [
+   "chỉ hỗ trợ về menu",
+   "chưa trả lời được câu này"
+  ]
+ },
+ {
+  "q": "quán mở cửa lúc mấy giờ?",
+  "source": "info",
+  "must": [
+   "chưa có thông tin"
+  ]
+ },
+ {
+  "q": "xin chào",
+  "source": "chitchat"
+ },
+ {
+  "q": "gợi ý món mát cho mình",
+  "source": "llm",
+  "any_of": [
+   "Nước ép",
+   "Trà",
+   "Sinh tố",
+   "Nâu đá"
+  ]
+ },
+ {
+  "q": "cho mình hỏi món nào ít ngọt?",
+  "source": "llm",
+  "any_of": [
+   "Nước ép dưa hấu",
+   "Cà phê đen",
+   "Cà phê"
+  ]
+ },
+ {
+  "q": "Món nào ít ngọt dưới 40k?",
+  "source": "llm",
+  "must_not": [
+   "Trà đào cam sả",
+   "Sinh tố",
+   "Nước ép lựu"
+  ]
+ },
+ {
+  "q": "nên uống cà phê muối hay nâu đá",
+  "source": "llm",
+  "any_of": [
+   "Cà phê muối",
+   "Nâu đá"
+  ]
+ },
+ {
+  "q": "trời nóng uống gì",
+  "source": "llm",
+  "any_of": [
+   "Nước ép",
+   "Trà",
+   "Sinh tố",
+   "Nâu đá"
+  ]
+ },
+ {
+  "q": "Tiramisu giá bao nhiêu?",
+  "source": "faq",
+  "must": [
+   "49.000đ"
+  ]
+ },
+ {
+  "q": "Nước ép lựu giá bao nhiêu",
+  "source": "faq",
+  "must": [
+   "55.000đ",
+   "65.000đ"
+  ]
+ },
+ {
+  "q": "Trà xoài chanh leo size L giá bao nhiêu?",
+  "source": "faq",
+  "must": [
+   "59.000đ"
+  ]
+ },
+ {
+  "q": "Cho mình 3 macaron, tổng bao nhiêu?",
+  "source": "faq",
+  "must": [
+   "90.000đ"
+  ]
+ },
+ {
+  "q": "Cho mình 1 trà mãng cầu size M thêm trân châu đen, tổng bao nhiêu?",
+  "source": "faq",
+  "must": [
+   "52.000đ"
+  ]
+ },
+ {
+  "q": "Cho mình 2 nâu đá size M thêm 1 shot espresso mỗi ly, tổng bao nhiêu?",
+  "source": "faq",
+  "must": [
+   "78.000đ"
+  ]
+ },
+ {
+  "q": "Cho mình 1 tiramisu thêm kem tươi, tổng bao nhiêu?",
+  "source": "faq",
+  "must": [
+   "57.000đ"
+  ]
+ },
+ {
+  "q": "Tiramisu có caffeine không?",
+  "source": "faq",
+  "must": [
+   "có caffeine"
+  ]
+ },
+ {
+  "q": "Nước ép cam có caffeine không?",
+  "source": "faq",
+  "must": [
+   "không có caffeine"
+  ]
+ },
+ {
+  "q": "Macaron có gluten không?",
+  "source": "faq",
+  "must": [
+   "không chứa gluten"
+  ]
+ },
+ {
+  "q": "Sinh tố xoài có sữa không?",
+  "source": "faq",
+  "must": [
+   "không chứa sữa"
+  ]
+ },
+ {
+  "q": "Trà nào có caffeine?",
+  "source": "faq",
+  "must": [
+   "Trà nho",
+   "Trà đào cam sả"
+  ],
+  "must_not": [
+   "Cà phê"
+  ]
+ },
+ {
+  "q": "Món nào dưới 30k?",
+  "source": "faq",
+  "must": [
+   "Su kem",
+   "Tart trứng",
+   "Cà phê đen",
+   "Nâu đá"
+  ],
+  "must_not": [
+   "Macaron",
+   "Tiramisu"
+  ]
+ },
+ {
+  "q": "Món nào rẻ nhất?",
+  "source": "faq",
+  "must": [
+   "Su kem"
+  ],
+  "must_not": [
+   "Tiramisu"
+  ]
+ },
+ {
+  "q": "Trà đào cam sả thêm thạch vải được không?",
+  "source": "faq",
+  "must": [
+   "Được ạ"
+  ]
+ },
+ {
+  "q": "Nước ép dưa hấu thêm trân châu đen được không?",
+  "source": "faq",
+  "must": [
+   "không dùng được"
+  ]
+ },
+ {
+  "q": "Có bánh socola không?",
+  "source": "faq",
+  "must": [
+   "chưa có"
+  ],
+  "must_not": [
+   "Các món nhóm"
+  ]
+ },
+ {
+  "q": "Có sinh tố socola không?",
+  "source": "faq",
+  "must": [
+   "chưa có"
+  ],
+  "must_not": [
+   "Các món nhóm"
+  ]
+ },
+ {
+  "q": "Có cà phê matcha không?",
+  "source": "faq",
+  "must": [
+   "chưa có"
+  ],
+  "must_not": [
+   "Các món nhóm"
+  ]
+ },
+ {
+  "q": "Có trà sữa không?",
+  "source": "faq",
+  "must": [
+   "chưa có"
+  ],
+  "must_not": [
+   "có chứa sữa"
+  ]
+ },
+ {
+  "q": "Giá bitcoin hôm nay bao nhiêu?",
+  "source": "llm",
+  "must_not": [
+   "chỉ hỗ trợ về menu",
+   "chưa trả lời được câu này"
+  ]
+ },
+ {
+  "q": "Giải giúp mình bài toán lớp 5",
+  "source": "llm",
+  "must_not": [
+   "chỉ hỗ trợ về menu",
+   "chưa trả lời được câu này"
+  ]
+ },
+ {
+  "q": "Quán ở địa chỉ nào vậy?",
+  "source": "info",
+  "must": [
+   "chưa có thông tin"
+  ]
+ },
+ {
+  "q": "cảm ơn bạn",
+  "source": "chitchat"
+ },
+ {
+  "q": "Mình thích vị chua ngọt, nên uống gì?",
+  "source": "llm",
+  "any_of": [
+   "Trà",
+   "Nước ép",
+   "Sinh tố"
+  ]
+ },
+ {
+  "q": "Món nào hợp ăn kèm cà phê muối?",
+  "source": "llm",
+  "any_of": [
+   "Tiramisu",
+   "Macaron",
+   "Su kem",
+   "Tart trứng"
+  ]
+ },
+ {
+  "q": "Mình không uống được cà phê, gợi ý giúp mình món khác.",
+  "source": "llm",
+  "must_not": [
+   "Cà phê đen",
+   "Nâu đá",
+   "Cà phê muối"
+  ]
+ },
+ {
+  "q": "Không muốn uống trà, gợi ý món khác",
+  "source": "llm",
+  "must_not": [
+   "Trà đào cam sả",
+   "Trà nho"
+  ]
+ },
+ {
+  "q": "Hôm nay trời nóng quá",
+  "source": "llm",
+  "any_of": [
+   "Nước ép",
+   "Trà",
+   "Sinh tố",
+   "Nâu đá"
+  ]
+ },
+ {
+  "q": "Mình muốn mua cho bạn gái, nên chọn gì",
+  "source": "llm",
+  "any_of": [
+   "Tiramisu",
+   "Macaron",
+   "Trà",
+   "Nước ép",
+   "Sinh tố",
+   "Cà phê"
+  ]
+ },
+ {
+  "q": "Bạn khỏe không?",
+  "source": "chitchat",
+  "must": [
+   "khỏe"
+  ]
+ },
+ {
+  "q": "Cho mình hỏi về chính sách đổi trả",
+  "source": "info",
+  "must": [
+   "chưa có thông tin"
+  ],
+  "must_not": [
+   "Trà đào cam sả"
+  ]
+ },
+ {
+  "q": "Thủ đô nước Pháp là gì?",
+  "source": "llm",
+  "must_not": [
+   "chỉ hỗ trợ về menu"
+  ]
+ }
+]

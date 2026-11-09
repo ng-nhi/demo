@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hallelujah Coffee — Trợ lý AI</title>
+<meta name="description" content="Hỏi đáp menu, tư vấn món, tính tiền và chốt đơn tại Hallelujah Coffee.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css">
+<link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="brand">
+    <span class="brand__mark"><i class="ph ph-coffee" aria-hidden="true"></i></span>
+    <span>
+      <span class="brand__name" id="shop-name">Hallelujah Coffee</span>
+      <span class="brand__sub">7:00 – 22:00, 24 Lý Tự Trọng</span>
+    </span>
+  </div>
+
+  <nav class="site-nav" id="site-nav" aria-label="Danh mục món"></nav>
+
+  <div class="head-tools">
+    <label class="search">
+      <i class="ph ph-magnifying-glass" aria-hidden="true"></i>
+      <input type="search" id="search" placeholder="Tìm món, ví dụ: trà đào" aria-label="Tìm món trong menu">
+    </label>
+    <span class="chat__state" id="ai-status" aria-live="polite">
+      <span class="dot" aria-hidden="true"></span><span id="ai-status-text">Đang kiểm tra</span>
+    </span>
+    <button type="button" class="cart-btn" id="open-cart" aria-label="Mở giỏ hàng">
+      <i class="ph ph-shopping-bag" aria-hidden="true"></i>Giỏ hàng
+      <span class="cart-btn__count" id="cart-count">0</span>
+    </button>
+    <button type="button" class="burger" id="burger" aria-label="Mở giỏ hàng">
+      <i class="ph ph-list" aria-hidden="true"></i>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero__disc" aria-hidden="true"></div>
+
+    <div class="hero__grid">
+      <section class="chat" aria-label="Trợ lý quán">
+        <header class="chat__head">
+          <div class="chat__id">
+            <span class="dot" aria-hidden="true"></span>
+            <span class="chat__name">Trợ lý quán</span>
+            <span class="chat__state" id="chat-state">Đang kiểm tra</span>
+          </div>
+          <span class="chat__ctx" id="chat-context" hidden>
+            <i class="ph ph-coffee" aria-hidden="true"></i><span id="chat-context-text"></span>
+          </span>
+        </header>
+
+        <div class="chat__log" id="log" role="log" aria-live="polite"></div>
+
+        <div class="chat__chips" id="chips"></div>
+
+        <form class="composer" id="form">
+          <input type="text" id="input" maxlength="500" autocomplete="off"
+                 placeholder="Hỏi món, hoặc gõ: cho mình 2 cà phê muối size L"
+                 aria-label="Tin nhắn gửi trợ lý">
+          <button type="submit" class="composer__send" id="send" aria-label="Gửi tin nhắn">
+            <i class="ph ph-paper-plane-tilt" aria-hidden="true"></i>
+          </button>
+        </form>
+      </section>
+
+      <div class="hero__side">
+        <h1 class="hero__title">Hỏi món,<br>đặt món</h1>
+
+        <section class="order" aria-label="Đơn hiện tại">
+          <header class="order__head">
+            <h2>Đơn hiện tại</h2>
+            <span id="order-count">0 món</span>
+          </header>
+          <ul class="order__lines" id="order-lines"></ul>
+          <div class="order__total">
+            <span>Tổng cộng</span>
+            <strong id="order-total">0đ</strong>
+          </div>
+          <button type="button" class="btn btn--navy order__cta" id="order-checkout" disabled>Chốt đơn</button>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu" aria-label="Menu">
+    <div class="menu__bar">
+      <div class="menu__left">
+        <h2>Menu</h2>
+        <div class="chips" id="cat-chips" role="group" aria-label="Lọc theo danh mục"></div>
+      </div>
+      <div class="menu__meta">
+        <span id="menu-count">– món</span>
+        <button type="button" class="icon-btn" id="prev" aria-label="Món trước">
+          <i class="ph ph-caret-left" aria-hidden="true"></i>
+        </button>
+        <button type="button" class="icon-btn" id="next" aria-label="Món sau">
+          <i class="ph ph-caret-right" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="rail" id="rail"></div>
+  </section>
+</main>
+
+<div class="scrim" id="scrim" hidden></div>
+
+<aside class="drawer" id="drawer" hidden aria-label="Giỏ hàng">
+  <header class="drawer__head">
+    <div>
+      <h2>Giỏ hàng</h2>
+      <span id="drawer-count">0 món</span>
+    </div>
+    <button type="button" class="icon-btn" id="drawer-close" aria-label="Đóng giỏ hàng">
+      <i class="ph ph-x" aria-hidden="true"></i>
+    </button>
+  </header>
+  <div class="drawer__body" id="drawer-lines"></div>
+  <footer class="drawer__foot">
+    <div class="drawer__total">
+      <span>Tạm tính</span>
+      <strong id="drawer-total">0đ</strong>
+    </div>
+    <button type="button" class="btn btn--navy" id="drawer-checkout" disabled>Chốt đơn</button>
+  </footer>
+</aside>
+
+<div class="dialog-wrap" id="dialog" hidden>
+  <div class="dialog" role="dialog" aria-modal="true" aria-labelledby="dialog-title">
+    <header class="dialog__head">
+      <span class="dialog__check"><i class="ph ph-check" aria-hidden="true"></i></span>
+      <div>
+        <p id="dialog-title">Đã chốt đơn</p>
+        <p id="dialog-shop">Hallelujah Coffee</p>
+      </div>
+    </header>
+    <div class="dialog__body">
+      <p class="dialog__label">Mã đơn</p>
+      <p class="dialog__id" id="dialog-id">DH0000</p>
+      <ul class="dialog__lines" id="dialog-lines"></ul>
+      <div class="dialog__total">
+        <span>Tổng cộng</span>
+        <strong id="dialog-total">0đ</strong>
+      </div>
+      <button type="button" class="btn btn--ghost" id="dialog-close">Chọn món khác</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" hidden></div>
+
+<script src="static/js/app.js" defer></script>
+</body>
+</html>
